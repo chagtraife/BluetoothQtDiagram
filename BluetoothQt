@@ -1,1 +1,263 @@
-<mxfile host="app.diagrams.net" modified="2021-10-02T05:34:24.723Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/98.0.168 Chrome/92.0.4515.168 Safari/537.36" version="15.4.1" etag="XEgWATpJ-c1-YjrZgQJ8" type="github"><diagram id="n8A_yhstimHUuH6VOAzN">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-02T06:46:53.513Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/98.0.168 Chrome/92.0.4515.168 Safari/537.36" etag="8n0IchhuiHiSrKrmjuAm" version="15.4.1" type="github">
+  <diagram id="n8A_yhstimHUuH6VOAzN" name="Page-1">
+    <mxGraphModel dx="1796" dy="560" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-1" value="QLowEnergyController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="360" y="116" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-2" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-1">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-1">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-4" value="QBluetoothAddress localAddress() const;&#xa;QBluetoothAddress remoteAddress() const;&#xa;QBluetoothUuid remoteDeviceUuid() const;&#xa;&#xa;QString remoteName() const;&#xa;&#xa;ControllerState state() const;&#xa;&#xa;connectToDevice();&#xa;&#xa;disconnectFromDevice();&#xa;&#xa;discoverServices();&#xa;&#xa;QList&lt;QBluetoothUuid&gt; services() const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-1">
+          <mxGeometry y="60" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="-140" y="525" width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-5" value="«enum»&lt;br&gt;&lt;b&gt;Error&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; NoError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; UnknownError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; UnknownRemoteDeviceError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; NetworkError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; InvalidBluetoothAdapterError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ConnectionError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AdvertisingError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; RemoteHostClosedError,&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AuthorizationError&lt;/b&gt;&lt;/div&gt;" style="html=1;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-21">
+          <mxGeometry width="230" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-21">
+          <mxGeometry y="40" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-22" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="130" y="550" width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-23" value="«enum»&lt;br&gt;&lt;b&gt;ControllerState&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; UnconnectedState = 0,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ConnectingState,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ConnectedState,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DiscoveringState,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; DiscoveredState,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ClosingState,&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AdvertisingState,&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="html=1;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-22">
+          <mxGeometry width="200" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-22">
+          <mxGeometry y="29.473684210526315" width="200" height="5.894736842105263" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-25" value="QLowEnergyService" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="890" y="122" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-26" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-25">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-25">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-28" value="QBluetoothAddress localAddress() const;&#xa;QBluetoothAddress remoteAddress() const;&#xa;QBluetoothUuid remoteDeviceUuid() const;&#xa;&#xa;QString remoteName() const;&#xa;&#xa;ControllerState state() const;&#xa;&#xa;connectToDevice();&#xa;&#xa;disconnectFromDevice();&#xa;&#xa;discoverServices();&#xa;&#xa;QList&lt;QBluetoothUuid&gt; services() const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-25">
+          <mxGeometry y="60" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-29" value="QLowEnergyAdvertisingData" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="120" width="300" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-30" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-29">
+          <mxGeometry y="26" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-29">
+          <mxGeometry y="48" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-32" value="QBluetoothAddress localAddress() const;&#xa;QBluetoothAddress remoteAddress() const;&#xa;QBluetoothUuid remoteDeviceUuid() const;&#xa;&#xa;QString remoteName() const;&#xa;&#xa;ControllerState state() const;&#xa;&#xa;connectToDevice();&#xa;&#xa;disconnectFromDevice();&#xa;&#xa;discoverServices();&#xa;&#xa;QList&lt;QBluetoothUuid&gt; services() const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-29">
+          <mxGeometry y="56" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-33" value="QLowEnergyCharacteristic" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1830" y="120" width="300" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-34" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-33">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-33">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-36" value="QBluetoothAddress localAddress() const;&#xa;QBluetoothAddress remoteAddress() const;&#xa;QBluetoothUuid remoteDeviceUuid() const;&#xa;&#xa;QString remoteName() const;&#xa;&#xa;ControllerState state() const;&#xa;&#xa;connectToDevice();&#xa;&#xa;disconnectFromDevice();&#xa;&#xa;discoverServices();&#xa;&#xa;QList&lt;QBluetoothUuid&gt; services() const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-33">
+          <mxGeometry y="60" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-37" value="QLowEnergyDescriptor" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2350" y="100" width="300" height="296" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-38" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-37">
+          <mxGeometry y="26" width="300" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-37">
+          <mxGeometry y="48" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-40" value="QBluetoothAddress localAddress() const;&#xa;QBluetoothAddress remoteAddress() const;&#xa;QBluetoothUuid remoteDeviceUuid() const;&#xa;&#xa;QString remoteName() const;&#xa;&#xa;ControllerState state() const;&#xa;&#xa;connectToDevice();&#xa;&#xa;disconnectFromDevice();&#xa;&#xa;discoverServices();&#xa;&#xa;QList&lt;QBluetoothUuid&gt; services() const;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-37">
+          <mxGeometry y="56" width="300" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-44" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;exitX=-0.001;exitY=0.456;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.021;entryY=0.387;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-28" target="Q0oonD7Veje25Jdz6_gq-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="660" y="300" as="sourcePoint" />
+            <mxPoint x="820" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-45" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1.01;entryY=0.421;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-32" target="Q0oonD7Veje25Jdz6_gq-28">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1120" y="530" as="sourcePoint" />
+            <mxPoint x="1240" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-48" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-36" target="Q0oonD7Veje25Jdz6_gq-32">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1790" y="680" as="sourcePoint" />
+            <mxPoint x="1950" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-49" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-40" target="Q0oonD7Veje25Jdz6_gq-36">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2170" y="600" as="sourcePoint" />
+            <mxPoint x="2330" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-50" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="Q0oonD7Veje25Jdz6_gq-23">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="470" y="417" as="sourcePoint" />
+            <mxPoint x="740" y="550" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="470" y="417" />
+              <mxPoint x="470" y="485" />
+              <mxPoint x="250" y="485" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-51" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;exitX=0.281;exitY=1.005;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-4" target="Q0oonD7Veje25Jdz6_gq-5">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="440" as="sourcePoint" />
+            <mxPoint x="320" y="450" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="444" y="450" />
+              <mxPoint x="-20" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-56" value="QLowEnergyControllerPrivate" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="360" y="550" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-57" value="QLowEnergyControllerPrivate privateController();" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-56">
+          <mxGeometry y="26" width="300" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-58" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-56">
+          <mxGeometry y="52" width="300" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-60" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;fontSize=20;edgeStyle=orthogonalEdgeStyle;entryX=0.52;entryY=1.011;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-56" target="Q0oonD7Veje25Jdz6_gq-4">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="520" y="500" as="sourcePoint" />
+            <mxPoint x="680" y="500" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="516" y="500" />
+              <mxPoint x="516" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-61" value="QLowEnergyControllerPrivateAndroid" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="840" width="250" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-63" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-61">
+          <mxGeometry y="26" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-65" value="QLowEnergyControllerPrivateBluez" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="150" y="770" width="170" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-67" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-65">
+          <mxGeometry y="26" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-69" value="QLowEnergyControllerPrivateBluezDBus" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="240" y="840" width="210" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-71" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-69">
+          <mxGeometry y="26" width="210" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-73" value="QLowEnergyControllerPrivateWinRT" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="770" width="250" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-75" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-73">
+          <mxGeometry y="26" width="250" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-77" value="QLowEnergyControllerPrivateWin32" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="670" y="770" width="180" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-79" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-77">
+          <mxGeometry y="26" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-81" value="QLowEnergyControllerPrivateDarwin" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="750" y="840" width="190" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-83" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-81">
+          <mxGeometry y="26" width="190" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-85" value="QLowEnergyControllerPrivateCommon" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="520" y="840" width="200" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-87" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Q0oonD7Veje25Jdz6_gq-85">
+          <mxGeometry y="26" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-90" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=10;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-69" target="Q0oonD7Veje25Jdz6_gq-58">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="410" y="830" as="sourcePoint" />
+            <mxPoint x="370" y="810" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="345" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-91" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=10;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-65">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="230" y="750" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-92" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=10;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-61">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="85" y="1161" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="105" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-93" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=5;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-73">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="750" y="740" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="510" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-94" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=5;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-77">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="710" y="740" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="760" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-95" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=5;edgeStyle=orthogonalEdgeStyle;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-81">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="910" y="1100" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="893" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Q0oonD7Veje25Jdz6_gq-96" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;fontSize=5;edgeStyle=orthogonalEdgeStyle;exitX=0.652;exitY=0.035;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Q0oonD7Veje25Jdz6_gq-85">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="800" as="sourcePoint" />
+            <mxPoint x="510" y="610" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="740" />
+              <mxPoint x="510" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
